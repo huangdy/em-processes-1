@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result>
+  <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+    <ns2:Fault xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns3="http://www.w3.org/2003/05/soap-envelope">
+      <faultcode>ns2:Server</faultcode>
+      <faultstring>CAP11:oasis.names.tc.emergency.cap._1.Alert@3abd6c6b</faultstring>
+      <detail>
+        <ns4:CAPServiceException xmlns="urn:oasis:names:tc:emergency:cap:1.1" xmlns:ns2="http://gov.fema.dmopen.services/caprequest" xmlns:ns3="http://gov.fema.dmopen.services/capresponse" xmlns:ns4="http://gov.fema.dmopen.services/DMOPEN_CAPService/">
+          <ns4:errorCode xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+          <ns4:message>CAP POST MESSAGE FAILED - UNIQUE IDENTIFIER 
+Error Code: OP01</ns4:message>
+        </ns4:CAPServiceException>
+        <ns2:exception class="gov.fema.dmopen.services.dmopen_capservice.CAPSoapException" note="To disable this feature, set com.sun.xml.ws.fault.SOAPFaultBuilder.disableCaptureStackTrace system property to false" xmlns:ns2="http://jax-ws.dev.java.net/">
+          <message>CAP11:oasis.names.tc.emergency.cap._1.Alert@3abd6c6b</message>
+          <ns2:stackTrace>
+            <ns2:frame class="gov.fema.dmopen.services.dmopen_capservice.DMOPEN_CAPServiceImpl" file="DMOPEN_CAPServiceImpl.java" line="136" method="postCAP"/>
+            <ns2:frame class="sun.reflect.GeneratedMethodAccessor7188" line="unknown" method="invoke"/>
+            <ns2:frame class="sun.reflect.DelegatingMethodAccessorImpl" file="DelegatingMethodAccessorImpl.java" line="25" method="invoke"/>
+            <ns2:frame class="java.lang.reflect.Method" file="Method.java" line="597" method="invoke"/>
+            <ns2:frame class="weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker" file="WLSInstanceResolver.java" line="92" method="invoke"/>
+            <ns2:frame class="weblogic.wsee.jaxws.WLSInstanceResolver$WLSInvoker" file="WLSInstanceResolver.java" line="74" method="invoke"/>
+            <ns2:frame class="com.sun.xml.ws.server.InvokerTube$2" file="InvokerTube.java" line="151" method="invoke"/>
+            <ns2:frame class="com.sun.xml.ws.server.sei.EndpointMethodHandlerImpl" file="EndpointMethodHandlerImpl.java" line="268" method="invoke"/>
+            <ns2:frame class="com.sun.xml.ws.server.sei.SEIInvokerTube" file="SEIInvokerTube.java" line="100" method="processRequest"/>
+            <ns2:frame class="weblogic.wsee.jaxws.security.AuthorizationTube$RunAsWrapperTube$1" file="AuthorizationTube.java" line="291" method="run"/>
+            <ns2:frame class="weblogic.wsee.jaxws.security.AuthorizationTube$RunAsWrapperTube$1" file="AuthorizationTube.java" line="289" method="run"/>
+            <ns2:frame class="java.security.AccessController" file="AccessController.java" line="native" method="doPrivileged"/>
+            <ns2:frame class="javax.security.auth.Subject" file="Subject.java" line="337" method="doAs"/>
+            <ns2:frame class="weblogic.wsee.jaxws.security.AuthorizationTube$RunAsWrapperTube" file="AuthorizationTube.java" line="288" method="processRequest"/>
+            <ns2:frame class="com.sun.xml.ws.api.pipe.Fiber" file="Fiber.java" line="866" method="__doRun"/>
+            <ns2:frame class="com.sun.xml.ws.api.pipe.Fiber" file="Fiber.java" line="815" method="_doRun"/>
+            <ns2:frame class="com.sun.xml.ws.api.pipe.Fiber" file="Fiber.java" line="778" method="doRun"/>
+            <ns2:frame class="com.sun.xml.ws.api.pipe.Fiber" file="Fiber.java" line="680" method="runSync"/>
+            <ns2:frame class="com.sun.xml.ws.server.WSEndpointImpl$2" file="WSEndpointImpl.java" line="403" method="process"/>
+            <ns2:frame class="com.sun.xml.ws.transport.http.HttpAdapter$HttpToolkit" file="HttpAdapter.java" line="532" method="handle"/>
+            <ns2:frame class="com.sun.xml.ws.transport.http.HttpAdapter" file="HttpAdapter.java" line="253" method="handle"/>
+            <ns2:frame class="com.sun.xml.ws.transport.http.servlet.ServletAdapter" file="ServletAdapter.java" line="140" method="handle"/>
+            <ns2:frame class="weblogic.wsee.jaxws.WLSServletAdapter" file="WLSServletAdapter.java" line="171" method="handle"/>
+            <ns2:frame class="weblogic.wsee.jaxws.HttpServletAdapter$AuthorizedInvoke" file="HttpServletAdapter.java" line="708" method="run"/>
+            <ns2:frame class="weblogic.security.acl.internal.AuthenticatedSubject" file="AuthenticatedSubject.java" line="363" method="doAs"/>
+            <ns2:frame class="weblogic.security.service.SecurityManager" file="SecurityManager.java" line="146" method="runAs"/>
+            <ns2:frame class="weblogic.wsee.util.ServerSecurityHelper" file="ServerSecurityHelper.java" line="103" method="authenticatedInvoke"/>
+            <ns2:frame class="weblogic.wsee.jaxws.HttpServletAdapter$3" file="HttpServletAdapter.java" line="311" method="run"/>
+            <ns2:frame class="weblogic.wsee.jaxws.HttpServletAdapter" file="HttpServletAdapter.java" line="336" method="post"/>
+            <ns2:frame class="weblogic.wsee.jaxws.JAXWSServlet" file="JAXWSServlet.java" line="95" method="doRequest"/>
+            <ns2:frame class="weblogic.servlet.http.AbstractAsyncServlet" file="AbstractAsyncServlet.java" line="99" method="service"/>
+            <ns2:frame class="javax.servlet.http.HttpServlet" file="HttpServlet.java" line="820" method="service"/>
+            <ns2:frame class="weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction" file="StubSecurityHelper.java" line="227" method="run"/>
+            <ns2:frame class="weblogic.servlet.internal.StubSecurityHelper" file="StubSecurityHelper.java" line="125" method="invokeServlet"/>
+            <ns2:frame class="weblogic.servlet.internal.ServletStubImpl" file="ServletStubImpl.java" line="300" method="execute"/>
+            <ns2:frame class="weblogic.servlet.internal.TailFilter" file="TailFilter.java" line="26" method="doFilter"/>
+            <ns2:frame class="weblogic.servlet.internal.FilterChainImpl" file="FilterChainImpl.java" line="56" method="doFilter"/>
+            <ns2:frame class="oracle.security.jps.ee.http.JpsAbsFilter$1" file="JpsAbsFilter.java" line="111" method="run"/>
+            <ns2:frame class="java.security.AccessController" file="AccessController.java" line="native" method="doPrivileged"/>
+            <ns2:frame class="oracle.security.jps.util.JpsSubject" file="JpsSubject.java" line="313" method="doAsPrivileged"/>
+            <ns2:frame class="oracle.security.jps.ee.util.JpsPlatformUtil" file="JpsPlatformUtil.java" line="413" method="runJaasMode"/>
+            <ns2:frame class="oracle.security.jps.ee.http.JpsAbsFilter" file="JpsAbsFilter.java" line="94" method="runJaasMode"/>
+            <ns2:frame class="oracle.security.jps.ee.http.JpsAbsFilter" file="JpsAbsFilter.java" line="161" method="doFilter"/>
+            <ns2:frame class="oracle.security.jps.ee.http.JpsFilter" file="JpsFilter.java" line="71" method="doFilter"/>
+            <ns2:frame class="weblogic.servlet.internal.FilterChainImpl" file="FilterChainImpl.java" line="56" method="doFilter"/>
+            <ns2:frame class="oracle.dms.servlet.DMSServletFilter" file="DMSServletFilter.java" line="136" method="doFilter"/>
+            <ns2:frame class="weblogic.servlet.internal.FilterChainImpl" file="FilterChainImpl.java" line="56" method="doFilter"/>
+            <ns2:frame class="weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction" file="WebAppServletContext.java" line="3715" method="wrapRun"/>
+            <ns2:frame class="weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction" file="WebAppServletContext.java" line="3681" method="run"/>
+            <ns2:frame class="weblogic.security.acl.internal.AuthenticatedSubject" file="AuthenticatedSubject.java" line="321" method="doAs"/>
+            <ns2:frame class="weblogic.security.service.SecurityManager" file="SecurityManager.java" line="120" method="runAs"/>
+            <ns2:frame class="weblogic.servlet.internal.WebAppServletContext" file="WebAppServletContext.java" line="2277" method="securedExecute"/>
+            <ns2:frame class="weblogic.servlet.internal.WebAppServletContext" file="WebAppServletContext.java" line="2183" method="execute"/>
+            <ns2:frame class="weblogic.servlet.internal.ServletRequestImpl" file="ServletRequestImpl.java" line="1454" method="run"/>
+            <ns2:frame class="weblogic.work.ExecuteThread" file="ExecuteThread.java" line="209" method="execute"/>
+            <ns2:frame class="weblogic.work.ExecuteThread" file="ExecuteThread.java" line="178" method="run"/>
+          </ns2:stackTrace>
+        </ns2:exception>
+      </detail>
+    </ns2:Fault>
+  </S:Body>
+</result>

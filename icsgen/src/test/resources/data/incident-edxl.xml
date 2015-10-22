@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Incident ns:id="Incident-d6ae4400-a84f-4aa3-bc9b-2671ef57f6d5" xmlns="http://uicds.org/incident"
+    xmlns:ns="http://niem.gov/niem/structures/2.0" xmlns:ns1="http://niem.gov/niem/niem-core/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns1:ActivityIdentification>
+        <ns1:IdentificationID>192d9c02-9305-4a20-ba65-4d582d6467ea</ns1:IdentificationID>
+    </ns1:ActivityIdentification>
+    <ns1:ActivityCategoryText>Transport</ns1:ActivityCategoryText>
+    <ns1:ActivityDateRepresentation xsi:type="xs:anySimpleType"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">2009-03-14T07:52:58.515-04:00</ns1:ActivityDateRepresentation>
+    <ns1:ActivityName>UICDS-Client-1</ns1:ActivityName>
+    <ns1:IncidentLocation>
+        <ns1:LocationAddress>
+            <ns1:AddressFullText>Mile marker 138</ns1:AddressFullText>
+        </ns1:LocationAddress>
+        <ns1:LocationArea />
+    </ns1:IncidentLocation>
+    <ns1:IncidentJurisdictionalOrganization>
+        <ns1:OrganizationName>Organization Name</ns1:OrganizationName>
+    </ns1:IncidentJurisdictionalOrganization>
+</Incident>
